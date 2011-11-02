@@ -6,7 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
 
-var port = 3000;
+var port = process.env.PORT || 4000;
 var app = module.exports = express.createServer();
 
 // Configuration
@@ -22,7 +22,6 @@ app.configure(function(){
 
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
-  port = 4000;
 });
 
 app.configure('production', function(){
