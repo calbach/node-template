@@ -7,5 +7,6 @@
     , "hamljs": ""
     , "sass": ""
     , "underscore": ""
+    , "nodemon": ""
   }
 }
