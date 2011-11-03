@@ -7,6 +7,6 @@
     , "hamljs": ""
     , "sass": ""
     , "underscore": ""
-    , "node-goog": ""
+    , "nclosure": ""
   }
 }
