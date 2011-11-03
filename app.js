@@ -1,16 +1,12 @@
 
-/**
- * Module dependencies.
- */
-
+/** Module dependencies. */
 var express = require('express')
   , routes = require('./routes')
 
 var port = process.env.PORT || 4000;
 var app = module.exports = express.createServer();
 
-// Configuration
-
+/* App configuration. */
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'haml');
@@ -25,15 +21,17 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public'));
 });
 
+/* Development environment configuration. */
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
 });
 
+/* Production environment configuration. */
 app.configure('production', function(){
   app.use(express.errorHandler()); 
 });
 
-// Routes
+/* Routes. */
 app.get('/', routes.index);
 
 app.listen(port);
