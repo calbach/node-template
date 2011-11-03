@@ -1,5 +1,5 @@
 /* Initialize closure. */
-require('nclosure').nclosure({additionalDeps:['src/deps.js']});
+require('nclosure').nclosure();
 
 goog.require('example.Example');
 
