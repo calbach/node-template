@@ -8,5 +8,6 @@
     , "sass": ""
     , "underscore": ""
     , "nclosure": ""
+    , "nodemon": ""
   }
 }
