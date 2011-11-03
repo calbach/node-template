@@ -1,0 +1,3 @@
+Use $nodemon app.js to start the server.
+
+Use ./compile.sh to recompile after server side closure changes.
