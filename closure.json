@@ -1,5 +1,5 @@
 // This document extends the global settings object which can be found in the
 // bin/closure.json file.
 {
-  additionalDeps: ['src/deps.js']
+  additionalDeps: ['src/server/deps.js', 'src/shared/deps.js']
 }
