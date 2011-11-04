@@ -1,3 +1,13 @@
-Use $nodemon app.js to start the server.
+Template for a nodejs app. Includes SASS, hamljs, and server/client side closure for nodejs.
+===
 
-Use ./compile.sh to recompile after server side closure changes.
+To start the server, use:
+---
+> > nodemon app.js
+---
+
+After changing any google dependencies, use the following command to recompile:
+
+---
+> ./compile.sh
+---
