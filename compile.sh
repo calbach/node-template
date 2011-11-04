@@ -1,1 +1,2 @@
-nccompile -d src
+sh client-compile.sh
+sh server-compile.sh
