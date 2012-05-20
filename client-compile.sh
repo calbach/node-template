@@ -1,4 +1,4 @@
-python public/javascripts/closure-library/closure/bin/calcdeps.py -p public/javascripts/closure-library -p src/shared -p src/client -i src/shared -i src/client -e src/shared/deps.js -o script > public/javascripts/application.js
+public/javascripts/closure-library/closure/bin/build/closurebuilder.py --root=public/javascripts/closure-library/ --root=src/shared --root=src/client --namespace="client.Example" --output_mode="script" > public/javascripts/application.js
 
 # Deps.
-# python public/javascripts/closure-library/closure/bin/calcdeps.py -d public/javascripts/closure-library -p src/shared -p src/client -e src/shared/deps.js -o deps > public/javascripts/deps.js
+public/javascripts/closure-library/closure/bin/build/depswriter.py --root="public/javascripts/closure-library/closure/goog" --root_with_prefix="src/shared ../../../../shared" --root_with_prefix="src/client ../../../../client" > public/javascripts/deps.js

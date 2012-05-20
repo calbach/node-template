@@ -1,4 +1,3 @@
-// Input 0
 // Copyright 2006 The Closure Library Authors. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -1500,13 +1499,9 @@ goog.scope = function(fn) {
 };
 
 
-
-// Input 1
 goog.provide('shared.Example');
 
 shared.Example = function() {};
-
-// Input 2
 // Copyright 2006 The Closure Library Authors. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -2749,12 +2744,11 @@ goog.string.toSelectorCase = function(str) {
       (goog.string.toSelectorCaseCache_[str] =
           String(str).replace(/([A-Z])/g, '-$1').toLowerCase());
 };
+goog.provide('client.Example');
 
-// Input 3
 goog.require('shared.Example');
 goog.require('goog.string');
 
-goog.provide('client.Example');
+
 
 client.Example = function() {};
-
