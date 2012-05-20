@@ -23,11 +23,14 @@ app.configure(function(){
 /* Development environment configuration. */
 app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
+  app.use(express.static(__dirname + '/src'));
+  app.set('js', '/javascripts/deps.js');
 });
 
 /* Production environment configuration. */
 app.configure('production', function(){
   app.use(express.errorHandler()); 
+  app.set('js', '/javascripts/application.js');
 });
 
 /* Routes. */
